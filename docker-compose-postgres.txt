@@ -1,0 +1,16 @@
+for postgres docker container creation check file docker-compose.yml
+the yml file can be executed in IntelliJ (that how I created db for the project)
+
+command line (IntelliJ terminal) commands for docker and postgres (minimal set):
+
+docker ps
+docker exec -it postgres bash
+psql -U marat
+\l
+\c customer
+\d
+\dt
+select * from customer
+\q
+^d
+

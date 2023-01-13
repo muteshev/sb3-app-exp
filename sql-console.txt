@@ -1,0 +1,14 @@
+select * from customer;
+
+insert into customer (id, name, email, age)
+values (nextval('customer_seq'), 'Jack', 'jack@gmail.com', 20);
+insert into customer (id, name, email, age)
+values (nextval('customer_seq'), 'John', 'john@gmail.com', 21);
+insert into customer (id, name, email, age)
+values (nextval('customer_seq'), 'Jim', 'jim@gmail.com', 22);
+
+alter sequence customer_seq increment by 1;
+
+drop sequence customer_seq;
+create sequence customer_seq increment by 1;
+alter sequence customer_seq owner to marat;
